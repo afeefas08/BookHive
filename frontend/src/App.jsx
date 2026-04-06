@@ -1,15 +1,16 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import { useState } from 'react'
-import Navbar from './compontents/Navbar'
-import Hero from './compontents/Hero'
-import PopularBooks from './compontents/PopularBooks'
+import Home from './Pages/Home'
 
 function App() {
 
   return (
-    <>
-    <Navbar />
-    <Hero />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

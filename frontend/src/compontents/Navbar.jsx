@@ -196,7 +196,7 @@ export default function Navbar() {
                 )}
             </div>
 
-            <style jsx>{`
+            <style>{`
                 @keyframes fadeIn {
                     from {
                         opacity: 0;
