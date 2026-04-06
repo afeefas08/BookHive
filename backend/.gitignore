@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Static files (optional)
+staticfiles/
+
+# Migrations (optional - depends on team)
+**/migrations/*
+!**/migrations/__init__.py
+
+# Coverage / testing
+.coverage
+htmlcov/
+
+# Node (if frontend inside same repo)
+node_modules/
+
+# PostgreSQL dump files
+*.sql
