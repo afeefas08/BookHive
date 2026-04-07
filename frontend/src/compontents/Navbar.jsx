@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { useSelector, useDispatch } from "react-redux";
+import { logout } from "../redux/slices/authSlice";
 
 export default function Navbar() {
     const [state, setState] = useState(false)
@@ -36,6 +38,12 @@ export default function Navbar() {
             ]
         }
     ]
+
+    const dispatch = useDispatch();
+    const { token, user } = useSelector((state)=> state.auth);
+    const handleLogout = () => {
+        dispatch(logout())
+    }
 
     useEffect(() => {
         const handleClick = (e) => {
@@ -144,11 +152,19 @@ export default function Navbar() {
                             )}
                         </a>
 
-                        <button
-                            className="px-4 py-2 text-white bg-stone-900 rounded-full duration-150 hover:bg-stone-800 transition-colors"
-                        >
-                            Login
-                        </button>
+                        {token ? (
+                        <div className="flex items-center space-x-3">
+                            <span className="text-sm text-stone-700">
+                                {user?.username || "User"}
+                            </span>
+                            
+                        </div>
+                    ) : (
+                        <a href="/login">
+                            <button className="px-4 py-2 text-white bg-stone-900 rounded-full hover:bg-stone-800 transition">
+                            Login</button>
+                        </a>
+                    )}
 
                         {/* Mobile menu button */}
                         <div className="md:hidden">

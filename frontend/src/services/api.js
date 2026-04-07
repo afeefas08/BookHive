@@ -1,7 +1,19 @@
 import axios from "axios"
 
 const api = axios.create({
-    baseUrl: "http://127.0.0.1:8000/api"
+    baseURL: "http://127.0.0.1:8000/api"
 });
+
+api.interceptors.request.use((config) => {
+    const token = localStorage.getItem('accessToken');
+    if (
+        token &&
+        !config.url.includes('/users/login/') &&
+        !config.url.includes('/users/register/')
+    ){
+        config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config
+})
 
 export default api;

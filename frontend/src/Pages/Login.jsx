@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import api from '../services/api';
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../redux/slices/authSlice"
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -6,7 +10,11 @@ export default function Login() {
     password: "",
     remember: false,
   });
+  console.log(formData);
 
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+  
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -15,9 +23,31 @@ export default function Login() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData); // Replace with API call later
+    try{
+        const response = await api.post('/users/login/', formData)
+
+        const token = response.data.access
+        dispatch(login({
+          token: response.data.access,
+          user: {
+            email: response.data.email,
+            username: response.data.username
+          }
+        }));
+
+        // Store JWT tokens
+        localStorage.setItem("token", token);
+        localStorage.setItem("refreshToken", response.data.refresh);
+
+        navigate('/')
+    }
+    catch(error){
+      console.log(error.response);
+        console.log(error.response.data);
+    }
+
   };
 
   return (

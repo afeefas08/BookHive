@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Register from './Pages/Register'
 import Login from './Pages/Login'
 import ForgotPassword from './Pages/ForgotPassword'
+import ProtectedRoute from './compontents/ProtectedRoute'
 
 function App() {
 
@@ -15,6 +16,12 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgot_password" element={<ForgotPassword />} />
+
+        <Route path='/cart' element={
+          <ProtectedRoute>
+            {/* cart */}
+          </ProtectedRoute>
+      }></Route>
       </Routes>
     </BrowserRouter>
   )

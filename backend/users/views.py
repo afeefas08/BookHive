@@ -2,10 +2,14 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import RegisterSerializer
+from .serializers import RegisterSerializer,UserSerializer
 
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import authenticate
+from .models import User
+
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
 
 class RegisterView(APIView):
     def post(self, request):
@@ -26,8 +30,11 @@ class LoginView(APIView):
 
         user = authenticate(username=email, password=password)
 
-        if user is not None:
+        user = User.objects.filter(email=email).first()
+
+        if user and user.check_password(password):
             refresh = RefreshToken.for_user(user)
+
 
             return Response({
                 'access':str(refresh.access_token),
@@ -40,3 +47,10 @@ class LoginView(APIView):
             {"error": "Invalid credentials"},
             status=status.HTTP_401_UNAUTHORIZED
         )
+    
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_me(request):
+    user = request.user
+    serializer = UserSerializer(user)
+    return Response(serializer.data)
