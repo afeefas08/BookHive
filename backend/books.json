@@ -1,0 +1,810 @@
+[
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "title": "Atomic Habits",
+      "slug": "atomic-habits",
+      "author": "James Clear",
+      "price": 499,
+      "discount_percent": 15,
+      "rating": 4.9,
+      "category": "Self Help",
+      "stock": 20,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0735211299-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "title": "Deep Work",
+      "slug": "deep-work",
+      "author": "Cal Newport",
+      "price": 450,
+      "discount_percent": 10,
+      "rating": 4.7,
+      "category": "Self Help",
+      "stock": 15,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/1455586692-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "title": "The Power of Habit",
+      "slug": "the-power-of-habit",
+      "author": "Charles Duhigg",
+      "price": 399,
+      "discount_percent": 12,
+      "rating": 4.6,
+      "category": "Self Help",
+      "stock": 18,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/081298160X-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "title": "Think Like a Monk",
+      "slug": "think-like-a-monk",
+      "author": "Jay Shetty",
+      "price": 399,
+      "discount_percent": 10,
+      "rating": 4.5,
+      "category": "Self Help",
+      "stock": 12,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0008386595-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "title": "Can't Hurt Me",
+      "slug": "cant-hurt-me",
+      "author": "David Goggins",
+      "price": 550,
+      "discount_percent": 20,
+      "rating": 4.8,
+      "category": "Self Help",
+      "stock": 10,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/1544512287-L.jpg"
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "title": "Rich Dad Poor Dad",
+      "slug": "rich-dad-poor-dad",
+      "author": "Robert Kiyosaki",
+      "price": 350,
+      "discount_percent": 18,
+      "rating": 4.7,
+      "category": "Finance",
+      "stock": 25,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/1612680194-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "title": "The Psychology of Money",
+      "slug": "the-psychology-of-money",
+      "author": "Morgan Housel",
+      "price": 420,
+      "discount_percent": 10,
+      "rating": 4.8,
+      "category": "Finance",
+      "stock": 20,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0857197681-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 8,
+    "fields": {
+      "title": "I Will Teach You to Be Rich",
+      "slug": "i-will-teach-you-to-be-rich",
+      "author": "Ramit Sethi",
+      "price": 450,
+      "discount_percent": 15,
+      "rating": 4.6,
+      "category": "Finance",
+      "stock": 18,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/1523505745-L.jpg"
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 9,
+    "fields": {
+      "title": "The Millionaire Next Door",
+      "slug": "the-millionaire-next-door",
+      "author": "Thomas Stanley",
+      "price": 400,
+      "discount_percent": 0,
+      "rating": 4.5,
+      "category": "Finance",
+      "stock": 12,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/1589795474-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 10,
+    "fields": {
+      "title": "Your Money or Your Life",
+      "slug": "your-money-or-your-life",
+      "author": "Vicki Robin",
+      "price": 380,
+      "discount_percent": 0,
+      "rating": 4.4,
+      "category": "Finance",
+      "stock": 15,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0143115766-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 26,
+    "fields": {
+      "title": "The Shining",
+      "slug": "the-shining",
+      "author": "Stephen King",
+      "price": 500,
+      "discount_percent": 20,
+      "rating": 4.7,
+      "category": "Horror",
+      "stock": 15,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0307743658-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 27,
+    "fields": {
+      "title": "Dracula",
+      "slug": "dracula",
+      "author": "Bram Stoker",
+      "price": 320,
+      "discount_percent": 10,
+      "rating": 4.5,
+      "category": "Horror",
+      "stock": 12,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0486411095-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 28,
+    "fields": {
+      "title": "Frankenstein",
+      "slug": "frankenstein",
+      "author": "Mary Shelley",
+      "price": 300,
+      "discount_percent": 0,
+      "rating": 4.4,
+      "category": "Horror",
+      "stock": 10,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0143131842-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 29,
+    "fields": {
+      "title": "It",
+      "slug": "it",
+      "author": "Stephen King",
+      "price": 550,
+      "discount_percent": 25,
+      "rating": 4.8,
+      "category": "Horror",
+      "stock": 8,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/1501175467-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 30,
+    "fields": {
+      "title": "The Haunting of Hill House",
+      "slug": "the-haunting-of-hill-house",
+      "author": "Shirley Jackson",
+      "price": 350,
+      "discount_percent": 0,
+      "rating": 4.3,
+      "category": "Horror",
+      "stock": 10,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0143122356-L.jpg"
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 31,
+    "fields": {
+      "title": "The Godfather",
+      "slug": "the-godfather",
+      "author": "Mario Puzo",
+      "price": 420,
+      "discount_percent": 15,
+      "rating": 4.7,
+      "category": "Crime",
+      "stock": 15,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0451205766-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 32,
+    "fields": {
+      "title": "The Da Vinci Code",
+      "slug": "the-da-vinci-code",
+      "author": "Dan Brown",
+      "price": 450,
+      "discount_percent": 18,
+      "rating": 4.6,
+      "category": "Crime",
+      "stock": 20,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0307474275-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 33,
+    "fields": {
+      "title": "Angels and Demons",
+      "slug": "angels-and-demons",
+      "author": "Dan Brown",
+      "price": 420,
+      "discount_percent": 10,
+      "rating": 4.5,
+      "category": "Crime",
+      "stock": 18,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/074349346X-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 34,
+    "fields": {
+      "title": "Sherlock Holmes",
+      "slug": "sherlock-holmes",
+      "author": "Arthur Conan Doyle",
+      "price": 400,
+      "discount_percent": 0,
+      "rating": 4.6,
+      "category": "Crime",
+      "stock": 25,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0553212417-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 35,
+    "fields": {
+      "title": "The Reversal",
+      "slug": "the-reversal",
+      "author": "Michael Connelly",
+      "price": 380,
+      "discount_percent": 0,
+      "rating": 4.3,
+      "category": "Crime",
+      "stock": 10,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0316069488-L.jpg"
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 36,
+    "fields": {
+      "title": "Sapiens",
+      "slug": "sapiens",
+      "author": "Yuval Noah Harari",
+      "price": 600,
+      "discount_percent": 20,
+      "rating": 4.9,
+      "category": "History",
+      "stock": 20,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0062316095-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 37,
+    "fields": {
+      "title": "Homo Deus",
+      "slug": "homo-deus",
+      "author": "Yuval Noah Harari",
+      "price": 620,
+      "discount_percent": 15,
+      "rating": 4.7,
+      "category": "History",
+      "stock": 15,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0062464310-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 38,
+    "fields": {
+      "title": "Guns, Germs, and Steel",
+      "slug": "guns-germs-and-steel",
+      "author": "Jared Diamond",
+      "price": 550,
+      "discount_percent": 0,
+      "rating": 4.6,
+      "category": "History",
+      "stock": 10,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0393354326-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 39,
+    "fields": {
+      "title": "A Brief History of Time",
+      "slug": "a-brief-history-of-time",
+      "author": "Stephen Hawking",
+      "price": 500,
+      "discount_percent": 10,
+      "rating": 4.8,
+      "category": "Science",
+      "stock": 12,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0553380168-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 40,
+    "fields": {
+      "title": "The Selfish Gene",
+      "slug": "the-selfish-gene",
+      "author": "Richard Dawkins",
+      "price": 450,
+      "discount_percent": 0,
+      "rating": 4.5,
+      "category": "Science",
+      "stock": 10,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0199291152-L.jpg"
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 41,
+    "fields": {
+      "title": "Dune",
+      "slug": "dune",
+      "author": "Frank Herbert",
+      "price": 500,
+      "discount_percent": 0,
+      "rating": 4.8,
+      "category": "Science Fiction",
+      "stock": 15,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0441172717-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 42,
+    "fields": {
+      "title": "Foundation",
+      "slug": "foundation",
+      "author": "Isaac Asimov",
+      "price": 450,
+      "discount_percent": 0,
+      "rating": 4.7,
+      "category": "Science Fiction",
+      "stock": 12,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0553293354-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 43,
+    "fields": {
+      "title": "Neuromancer",
+      "slug": "neuromancer",
+      "author": "William Gibson",
+      "price": 420,
+      "discount_percent": 0,
+      "rating": 4.5,
+      "category": "Science Fiction",
+      "stock": 10,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0441569595-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 44,
+    "fields": {
+      "title": "Snow Crash",
+      "slug": "snow-crash",
+      "author": "Neal Stephenson",
+      "price": 430,
+      "discount_percent": 0,
+      "rating": 4.4,
+      "category": "Science Fiction",
+      "stock": 9,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0553380956-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 45,
+    "fields": {
+      "title": "The Martian",
+      "slug": "the-martian",
+      "author": "Andy Weir",
+      "price": 480,
+      "discount_percent": 0,
+      "rating": 4.8,
+      "category": "Science Fiction",
+      "stock": 14,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0553418025-L.jpg"
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 46,
+    "fields": {
+      "title": "The Hobbit",
+      "slug": "the-hobbit",
+      "author": "J.R.R. Tolkien",
+      "price": 450,
+      "discount_percent": 0,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "stock": 15,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/054792822X-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 47,
+    "fields": {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "slug": "harry-potter-and-the-sorcerers-stone",
+      "author": "J.K. Rowling",
+      "price": 550,
+      "discount_percent": 0,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "stock": 25,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0439708184-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 48,
+    "fields": {
+      "title": "The Name of the Wind",
+      "slug": "the-name-of-the-wind",
+      "author": "Patrick Rothfuss",
+      "price": 500,
+      "discount_percent": 0,
+      "rating": 4.8,
+      "category": "Fantasy",
+      "stock": 12,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0756404746-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 49,
+    "fields": {
+      "title": "Mistborn",
+      "slug": "mistborn",
+      "author": "Brandon Sanderson",
+      "price": 480,
+      "discount_percent": 0,
+      "rating": 4.7,
+      "category": "Fantasy",
+      "stock": 10,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0765377136-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 50,
+    "fields": {
+      "title": "The Way of Kings",
+      "slug": "the-way-of-kings",
+      "author": "Brandon Sanderson",
+      "price": 600,
+      "discount_percent": 0,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "stock": 8,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0765326353-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 51,
+    "fields": {
+      "title": "The Kite Runner",
+      "slug": "the-kite-runner",
+      "author": "Khaled Hosseini",
+      "price": 400,
+      "discount_percent": 0,
+      "rating": 4.8,
+      "category": "Fiction",
+      "stock": 18,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/159463193X-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 52,
+    "fields": {
+      "title": "Life of Pi",
+      "slug": "life-of-pi",
+      "author": "Yann Martel",
+      "price": 420,
+      "discount_percent": 0,
+      "rating": 4.6,
+      "category": "Fiction",
+      "stock": 12,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0156027321-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 53,
+    "fields": {
+      "title": "The Book Thief",
+      "slug": "the-book-thief",
+      "author": "Markus Zusak",
+      "price": 450,
+      "discount_percent": 0,
+      "rating": 4.7,
+      "category": "Fiction",
+      "stock": 15,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0375842209-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 54,
+    "fields": {
+      "title": "The Fault in Our Stars",
+      "slug": "the-fault-in-our-stars",
+      "author": "John Green",
+      "price": 350,
+      "discount_percent": 0,
+      "rating": 4.5,
+      "category": "RomCom",
+      "stock": 20,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0525478817-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 55,
+    "fields": {
+      "title": "Me Before You",
+      "slug": "me-before-you",
+      "author": "Jojo Moyes",
+      "price": 380,
+      "discount_percent": 0,
+      "rating": 4.6,
+      "category": "RomCom",
+      "stock": 18,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0143124544-L.jpg"
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 56,
+    "fields": {
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "slug": "the-subtle-art-of-not-giving-a-fck",
+      "author": "Mark Manson",
+      "price": 420,
+      "discount_percent": 0,
+      "rating": 4.7,
+      "category": "Self Help",
+      "stock": 25,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0062457713-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 57,
+    "fields": {
+      "title": "Do Epic Shit",
+      "slug": "do-epic-shit",
+      "author": "Ankur Warikoo",
+      "price": 350,
+      "discount_percent": 0,
+      "rating": 4.5,
+      "category": "Self Help",
+      "stock": 20,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/9391165486-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 58,
+    "fields": {
+      "title": "Ikigai",
+      "slug": "ikigai",
+      "author": "Hector Garcia",
+      "price": 399,
+      "discount_percent": 0,
+      "rating": 4.6,
+      "category": "Self Help",
+      "stock": 22,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0143130722-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 59,
+    "fields": {
+      "title": "Start With Why",
+      "slug": "start-with-why",
+      "author": "Simon Sinek",
+      "price": 399,
+      "discount_percent": 0,
+      "rating": 4.6,
+      "category": "Business",
+      "stock": 18,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/1591846447-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 60,
+    "fields": {
+      "title": "The Lean Startup",
+      "slug": "the-lean-startup",
+      "author": "Eric Ries",
+      "price": 480,
+      "discount_percent": 0,
+      "rating": 4.7,
+      "category": "Business",
+      "stock": 15,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0307887898-L.jpg"
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 61,
+    "fields": {
+      "title": "Zero to One",
+      "slug": "zero-to-one",
+      "author": "Peter Thiel",
+      "price": 420,
+      "discount_percent": 0,
+      "rating": 4.6,
+      "category": "Business",
+      "stock": 20,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0804139296-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 62,
+    "fields": {
+      "title": "Shoe Dog",
+      "slug": "shoe-dog",
+      "author": "Phil Knight",
+      "price": 500,
+      "discount_percent": 0,
+      "rating": 4.7,
+      "category": "Business",
+      "stock": 10,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/1501135910-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 63,
+    "fields": {
+      "title": "The 4 Hour Workweek",
+      "slug": "the-4-hour-workweek",
+      "author": "Tim Ferriss",
+      "price": 450,
+      "discount_percent": 0,
+      "rating": 4.5,
+      "category": "Business",
+      "stock": 12,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0307465357-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 64,
+    "fields": {
+      "title": "Outliers",
+      "slug": "outliers",
+      "author": "Malcolm Gladwell",
+      "price": 420,
+      "discount_percent": 0,
+      "rating": 4.6,
+      "category": "Self Help",
+      "stock": 18,
+      "is_best_seller": true,
+      "image": "https://covers.openlibrary.org/b/isbn/0316017922-L.jpg"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 65,
+    "fields": {
+      "title": "Blink",
+      "slug": "blink",
+      "author": "Malcolm Gladwell",
+      "price": 400,
+      "discount_percent": 0,
+      "rating": 4.5,
+      "category": "Self Help",
+      "stock": 15,
+      "is_best_seller": false,
+      "image": "https://covers.openlibrary.org/b/isbn/0316010669-L.jpg"
+    }
+  }
+]

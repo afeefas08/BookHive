@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingBag, Star, ChevronRight, BookOpen, Sparkles, Shield, Truck } from 'lucide-react';
 import Navbar from './Navbar'
+import book_img from '../assets/book-img-1.png'
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,10 +12,9 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#fdfbf7] to-white overflow-hidden">
-      {/* Apple-style navigation bar */}
 
       {/* Main hero section */}
-      <main className="relative pt-17 pb-20 px-6 ">
+      <main className="relative pt-5 pb-20 px-6 ">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left content */}
@@ -47,23 +47,11 @@ const Hero = () => {
             </div>
 
             {/* Right content - Book showcase */}
-            <div className={`relative transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              <div className="relative">
-                {/* Main book image with floating effect */}
-                <div className="relative z-10 animate-float">
-                  <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl p-8 shadow-2xl">
-                    <img
-                      src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&h=1000&fit=crop"
-                      alt="Featured book"
-                      className="w-full max-w-md mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+            <img
+                src={book_img}
+                alt="Featured book"
+                className="w-full max-w-md rounded-2xl transform hover:scale-105 transition-transform duration-500"
                     />
-                  </div>
-                </div>
-
-                {/* Decorative circles */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-r from-gray-100/50 to-transparent rounded-full blur-3xl -z-10"></div>
-              </div>
-            </div>
           </div>
 
         </div>

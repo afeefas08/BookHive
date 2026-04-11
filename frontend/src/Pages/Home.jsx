@@ -1,6 +1,7 @@
 import React from 'react'
-import Navbar from '../compontents/Navbar'
-import Hero from '../compontents/Hero'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import BookCard from '../components/BookCard'
 
 export default function 
 () {
