@@ -50,4 +50,5 @@ class BookDetailView(APIView):
             return Response({'error': 'Book not found'}, status=404)
 
         serializer = BookSerializer(book)
+        lookup_field = "slug"
         return Response(serializer.data)

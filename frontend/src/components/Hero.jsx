@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingBag, Star, ChevronRight, BookOpen, Sparkles, Shield, Truck } from 'lucide-react';
-import Navbar from './Navbar'
-import book_img from '../assets/book-img-1.png'
+import book_img from "../assets/book-img-1.png";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);

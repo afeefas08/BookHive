@@ -23,11 +23,9 @@ export default function BookCard({ book, isWished, onToggleWishlist, onClick }) 
             -{discount}%
           </span>
         )}
-
-        {/* ❤️ WISHLIST SVG (UNCHANGED) */}
         <button
           onClick={(e) => {
-            e.stopPropagation(); // IMPORTANT (prevents navigation)
+            e.stopPropagation(); // prevents navigation)
             onToggleWishlist(book.id);
           }}
           className="absolute top-2 right-2 z-10"
