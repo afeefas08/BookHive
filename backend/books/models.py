@@ -23,7 +23,7 @@ class Book(models.Model):
     
     category_fk = models.ForeignKey(Category, null=True, on_delete=models.CASCADE)
     stock = models.PositiveIntegerField()
-    image = models.URLField(null=True, blank=True)
+    image = models.ImageField(upload_to='books-img/', blank=True, null=True)
     rating = models.FloatField(default=0)
 
     is_best_seller = models.BooleanField(default=False)

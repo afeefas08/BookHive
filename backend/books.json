@@ -9,7 +9,7 @@
       "price": 499,
       "discount_percent": 15,
       "rating": 4.9,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 20,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0735211299-L.jpg"
@@ -25,7 +25,7 @@
       "price": 450,
       "discount_percent": 10,
       "rating": 4.7,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 15,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/1455586692-L.jpg"
@@ -41,7 +41,7 @@
       "price": 399,
       "discount_percent": 12,
       "rating": 4.6,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 18,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/081298160X-L.jpg"
@@ -57,7 +57,7 @@
       "price": 399,
       "discount_percent": 10,
       "rating": 4.5,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 12,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0008386595-L.jpg"
@@ -73,13 +73,12 @@
       "price": 550,
       "discount_percent": 20,
       "rating": 4.8,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 10,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/1544512287-L.jpg"
     }
   },
-
   {
     "model": "books.book",
     "pk": 6,
@@ -90,7 +89,7 @@
       "price": 350,
       "discount_percent": 18,
       "rating": 4.7,
-      "category": "Finance",
+      "category_fk": 13,
       "stock": 25,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/1612680194-L.jpg"
@@ -106,7 +105,7 @@
       "price": 420,
       "discount_percent": 10,
       "rating": 4.8,
-      "category": "Finance",
+      "category_fk": 13,
       "stock": 20,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0857197681-L.jpg"
@@ -122,13 +121,12 @@
       "price": 450,
       "discount_percent": 15,
       "rating": 4.6,
-      "category": "Finance",
+      "category_fk": 13,
       "stock": 18,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/1523505745-L.jpg"
     }
   },
-
   {
     "model": "books.book",
     "pk": 9,
@@ -139,7 +137,7 @@
       "price": 400,
       "discount_percent": 0,
       "rating": 4.5,
-      "category": "Finance",
+      "category_fk": 13,
       "stock": 12,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/1589795474-L.jpg"
@@ -155,7 +153,7 @@
       "price": 380,
       "discount_percent": 0,
       "rating": 4.4,
-      "category": "Finance",
+      "category_fk": 13,
       "stock": 15,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0143115766-L.jpg"
@@ -171,7 +169,7 @@
       "price": 500,
       "discount_percent": 20,
       "rating": 4.7,
-      "category": "Horror",
+      "category_fk": 10,
       "stock": 15,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0307743658-L.jpg"
@@ -187,7 +185,7 @@
       "price": 320,
       "discount_percent": 10,
       "rating": 4.5,
-      "category": "Horror",
+      "category_fk": 10,
       "stock": 12,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0486411095-L.jpg"
@@ -203,7 +201,7 @@
       "price": 300,
       "discount_percent": 0,
       "rating": 4.4,
-      "category": "Horror",
+      "category_fk": 10,
       "stock": 10,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0143131842-L.jpg"
@@ -219,7 +217,7 @@
       "price": 550,
       "discount_percent": 25,
       "rating": 4.8,
-      "category": "Horror",
+      "category_fk": 10,
       "stock": 8,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/1501175467-L.jpg"
@@ -235,13 +233,12 @@
       "price": 350,
       "discount_percent": 0,
       "rating": 4.3,
-      "category": "Horror",
+      "category_fk": 10,
       "stock": 10,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0143122356-L.jpg"
     }
   },
-
   {
     "model": "books.book",
     "pk": 31,
@@ -252,7 +249,7 @@
       "price": 420,
       "discount_percent": 15,
       "rating": 4.7,
-      "category": "Crime",
+      "category_fk": 14,
       "stock": 15,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0451205766-L.jpg"
@@ -268,7 +265,7 @@
       "price": 450,
       "discount_percent": 18,
       "rating": 4.6,
-      "category": "Crime",
+      "category_fk": 14,
       "stock": 20,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0307474275-L.jpg"
@@ -284,7 +281,7 @@
       "price": 420,
       "discount_percent": 10,
       "rating": 4.5,
-      "category": "Crime",
+      "category_fk": 14,
       "stock": 18,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/074349346X-L.jpg"
@@ -300,7 +297,7 @@
       "price": 400,
       "discount_percent": 0,
       "rating": 4.6,
-      "category": "Crime",
+      "category_fk": 14,
       "stock": 25,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0553212417-L.jpg"
@@ -316,13 +313,12 @@
       "price": 380,
       "discount_percent": 0,
       "rating": 4.3,
-      "category": "Crime",
+      "category_fk": 14,
       "stock": 10,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0316069488-L.jpg"
     }
   },
-
   {
     "model": "books.book",
     "pk": 36,
@@ -333,7 +329,7 @@
       "price": 600,
       "discount_percent": 20,
       "rating": 4.9,
-      "category": "History",
+      "category_fk": 4,
       "stock": 20,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0062316095-L.jpg"
@@ -349,7 +345,7 @@
       "price": 620,
       "discount_percent": 15,
       "rating": 4.7,
-      "category": "History",
+      "category_fk": 4,
       "stock": 15,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0062464310-L.jpg"
@@ -365,7 +361,7 @@
       "price": 550,
       "discount_percent": 0,
       "rating": 4.6,
-      "category": "History",
+      "category_fk": 4,
       "stock": 10,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0393354326-L.jpg"
@@ -381,7 +377,7 @@
       "price": 500,
       "discount_percent": 10,
       "rating": 4.8,
-      "category": "Science",
+      "category_fk": 3,
       "stock": 12,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0553380168-L.jpg"
@@ -397,13 +393,12 @@
       "price": 450,
       "discount_percent": 0,
       "rating": 4.5,
-      "category": "Science",
+      "category_fk": 3,
       "stock": 10,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0199291152-L.jpg"
     }
   },
-
   {
     "model": "books.book",
     "pk": 41,
@@ -414,7 +409,7 @@
       "price": 500,
       "discount_percent": 0,
       "rating": 4.8,
-      "category": "Science Fiction",
+      "category_fk": 15,
       "stock": 15,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0441172717-L.jpg"
@@ -430,7 +425,7 @@
       "price": 450,
       "discount_percent": 0,
       "rating": 4.7,
-      "category": "Science Fiction",
+      "category_fk": 15,
       "stock": 12,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0553293354-L.jpg"
@@ -446,7 +441,7 @@
       "price": 420,
       "discount_percent": 0,
       "rating": 4.5,
-      "category": "Science Fiction",
+      "category_fk": 15,
       "stock": 10,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0441569595-L.jpg"
@@ -462,7 +457,7 @@
       "price": 430,
       "discount_percent": 0,
       "rating": 4.4,
-      "category": "Science Fiction",
+      "category_fk": 15,
       "stock": 9,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0553380956-L.jpg"
@@ -478,13 +473,12 @@
       "price": 480,
       "discount_percent": 0,
       "rating": 4.8,
-      "category": "Science Fiction",
+      "category_fk": 15,
       "stock": 14,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0553418025-L.jpg"
     }
   },
-
   {
     "model": "books.book",
     "pk": 46,
@@ -495,7 +489,7 @@
       "price": 450,
       "discount_percent": 0,
       "rating": 4.9,
-      "category": "Fantasy",
+      "category_fk": 9,
       "stock": 15,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/054792822X-L.jpg"
@@ -511,7 +505,7 @@
       "price": 550,
       "discount_percent": 0,
       "rating": 4.9,
-      "category": "Fantasy",
+      "category_fk": 9,
       "stock": 25,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0439708184-L.jpg"
@@ -527,7 +521,7 @@
       "price": 500,
       "discount_percent": 0,
       "rating": 4.8,
-      "category": "Fantasy",
+      "category_fk": 9,
       "stock": 12,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0756404746-L.jpg"
@@ -543,7 +537,7 @@
       "price": 480,
       "discount_percent": 0,
       "rating": 4.7,
-      "category": "Fantasy",
+      "category_fk": 9,
       "stock": 10,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0765377136-L.jpg"
@@ -559,7 +553,7 @@
       "price": 600,
       "discount_percent": 0,
       "rating": 4.9,
-      "category": "Fantasy",
+      "category_fk": 9,
       "stock": 8,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0765326353-L.jpg"
@@ -575,7 +569,7 @@
       "price": 400,
       "discount_percent": 0,
       "rating": 4.8,
-      "category": "Fiction",
+      "category_fk": 1,
       "stock": 18,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/159463193X-L.jpg"
@@ -591,7 +585,7 @@
       "price": 420,
       "discount_percent": 0,
       "rating": 4.6,
-      "category": "Fiction",
+      "category_fk": 1,
       "stock": 12,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0156027321-L.jpg"
@@ -607,7 +601,7 @@
       "price": 450,
       "discount_percent": 0,
       "rating": 4.7,
-      "category": "Fiction",
+      "category_fk": 1,
       "stock": 15,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0375842209-L.jpg"
@@ -623,7 +617,7 @@
       "price": 350,
       "discount_percent": 0,
       "rating": 4.5,
-      "category": "RomCom",
+      "category_fk": 11,
       "stock": 20,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0525478817-L.jpg"
@@ -639,13 +633,12 @@
       "price": 380,
       "discount_percent": 0,
       "rating": 4.6,
-      "category": "RomCom",
+      "category_fk": 11,
       "stock": 18,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0143124544-L.jpg"
     }
   },
-
   {
     "model": "books.book",
     "pk": 56,
@@ -656,7 +649,7 @@
       "price": 420,
       "discount_percent": 0,
       "rating": 4.7,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 25,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0062457713-L.jpg"
@@ -672,7 +665,7 @@
       "price": 350,
       "discount_percent": 0,
       "rating": 4.5,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 20,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/9391165486-L.jpg"
@@ -688,7 +681,7 @@
       "price": 399,
       "discount_percent": 0,
       "rating": 4.6,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 22,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0143130722-L.jpg"
@@ -704,7 +697,7 @@
       "price": 399,
       "discount_percent": 0,
       "rating": 4.6,
-      "category": "Business",
+      "category_fk": 12,
       "stock": 18,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/1591846447-L.jpg"
@@ -720,13 +713,12 @@
       "price": 480,
       "discount_percent": 0,
       "rating": 4.7,
-      "category": "Business",
+      "category_fk": 12,
       "stock": 15,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0307887898-L.jpg"
     }
   },
-
   {
     "model": "books.book",
     "pk": 61,
@@ -737,7 +729,7 @@
       "price": 420,
       "discount_percent": 0,
       "rating": 4.6,
-      "category": "Business",
+      "category_fk": 12,
       "stock": 20,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0804139296-L.jpg"
@@ -753,7 +745,7 @@
       "price": 500,
       "discount_percent": 0,
       "rating": 4.7,
-      "category": "Business",
+      "category_fk": 12,
       "stock": 10,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/1501135910-L.jpg"
@@ -769,7 +761,7 @@
       "price": 450,
       "discount_percent": 0,
       "rating": 4.5,
-      "category": "Business",
+      "category_fk": 12,
       "stock": 12,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0307465357-L.jpg"
@@ -785,7 +777,7 @@
       "price": 420,
       "discount_percent": 0,
       "rating": 4.6,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 18,
       "is_best_seller": true,
       "image": "https://covers.openlibrary.org/b/isbn/0316017922-L.jpg"
@@ -801,7 +793,7 @@
       "price": 400,
       "discount_percent": 0,
       "rating": 4.5,
-      "category": "Self Help",
+      "category_fk": 6,
       "stock": 15,
       "is_best_seller": false,
       "image": "https://covers.openlibrary.org/b/isbn/0316010669-L.jpg"
