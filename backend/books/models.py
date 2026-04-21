@@ -19,11 +19,9 @@ class Book(models.Model):
     title = models.CharField(max_length=255)
     author = models.CharField(max_length=255)
     price = models.DecimalField(max_digits=8, decimal_places=2)
-    discount_percent = models.PositiveIntegerField(
-    default=0,
-    validators=[MinValueValidator(0), MaxValueValidator(100)]
-)
-    category = models.ForeignKey(Category, related_name='books', on_delete=models.CASCADE)
+    discount_percent = models.PositiveIntegerField(default=0,validators=[MinValueValidator(0), MaxValueValidator(100)])   
+    
+    category_fk = models.ForeignKey(Category, null=True, on_delete=models.CASCADE)
     stock = models.PositiveIntegerField()
     image = models.URLField(null=True, blank=True)
     rating = models.FloatField(default=0)
@@ -33,6 +31,7 @@ class Book(models.Model):
 
     slug = models.SlugField(unique=True)
 
+    
     def save(self, *args, **kwargs):
         if not self.slug:  # only create slug if empty
             self.slug = slugify(self.title)
@@ -50,3 +49,4 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+    
