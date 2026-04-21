@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'books',
     'cart',
     'orders',
-    'django_filters'
+    'django_filters',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
