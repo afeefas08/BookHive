@@ -23,18 +23,22 @@ class Book(models.Model):
     
     category_fk = models.ForeignKey(Category, null=True, on_delete=models.CASCADE)
     stock = models.PositiveIntegerField()
-    image = models.ImageField(upload_to='books-img/', blank=True, null=True)
+    image = models.URLField(blank=True, null=True)
     rating = models.FloatField(default=0)
 
     is_best_seller = models.BooleanField(default=False)
     created_at = models.DateTimeField(default=now)
 
     slug = models.SlugField(unique=True)
+    author_slug = models.SlugField(blank=True)
 
     
     def save(self, *args, **kwargs):
         if not self.slug:  # only create slug if empty
             self.slug = slugify(self.title)
+
+        if not self.author_slug: 
+            self.author_slug = slugify(self.author)
         super().save(*args, **kwargs)
 
     @property
