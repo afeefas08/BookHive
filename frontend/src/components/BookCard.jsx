@@ -11,7 +11,7 @@ export default function BookCard({ book, isWished, onToggleWishlist, onClick }) 
   return (
     <div
       onClick={onClick}
-      className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
+      className="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
     >
 
       {/* IMAGE */}
@@ -49,7 +49,7 @@ export default function BookCard({ book, isWished, onToggleWishlist, onClick }) 
         <img
           src={book.image}
           alt={book.title}
-          className="w-40 h-48 object-contain rounded-xl transition-transform duration-300 hover:scale-105"
+          className="w-40 h-48 object-contain rounded-xl transition-transform duration-300 hover:scale-95"
         />
       </div>
 

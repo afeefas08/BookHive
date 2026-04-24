@@ -8,11 +8,13 @@ import ForgotPassword from './Pages/ForgotPassword'
 import ProtectedRoute from './components/ProtectedRoute'
 import Collection from './Pages/Collection'
 import Product from './Pages/Product'
+import Navbar from "./components/Navbar";
 
 function App() {
 
   return (
     <BrowserRouter>
+      <Navbar />  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
@@ -21,6 +23,7 @@ function App() {
 
         <Route path="/collections" element={<Collection />} />
         <Route path="/collections/:category" element={<Collection />} />
+        
         <Route path="/product/:slug" element={<Product />} />
 
         <Route path='/cart' element={
